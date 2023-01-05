@@ -30,5 +30,5 @@
 #### sprig uproot 
 - Removes sprig from your system
 
-#### sprig push \<NAME> user:passwd <path/to/manifest.json> <path/to/main.rsmy>
+#### sprig push \<NAME> passwd <path/to/manifest.json> <path/to/main.rsmy>
 - Pushes your code to existing package, with authentication required
