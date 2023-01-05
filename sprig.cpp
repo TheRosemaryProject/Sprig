@@ -1,7 +1,10 @@
 #include <iostream>
 #include <string>
 #include <cstring>
+#include <fstream>
+#include "json.hpp"
 using namespace std;  
+using json = nlohmann::json;
 int main(int argc, char** argv){    
     string bob[6];
     cout << "You have entered " << argc << " arguments:" << "\n";      
@@ -9,6 +12,7 @@ int main(int argc, char** argv){
         bob[i]=argv[i];
     }   
     char grab[]="pick";
+    char info[]="info";
     if (bob[1]==grab) {
         string cmd;
         string cmdpart0="curl ";
@@ -35,6 +39,13 @@ int main(int argc, char** argv){
         cout << cmd11;
         strcpy(char_array1, cmd11.c_str());
         system(char_array1);
+    }
+    if (bob[1]==info) {
+        ifstream f(bob[2]+".json");
+        json data = json::parse(f);
+        cout << "Name of Package - " << data["name"] <<endl;
+        cout << "Description - " << data["desc"]<<endl;
+        cout << "Version - " << data["version"]<<endl;
     }
 
 }
