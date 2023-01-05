@@ -3,13 +3,13 @@
 ## Actual Sprigs found at [this website](https://sprigrsmy.000webhostapp.com/)
 ### Commands
 
-#### sprig pick \<NAME>
+#### sprig pick \<NAME> DONE
 - downloads  sprig \<NAME> and saves it as \<NAME>.rsmy
 
 #### sprig prune \<NAME>
 - Updates sprig \<NAME>
 
-#### sprig grow \<NAME> <path/to/main.rsmy> <path/to/manifest.json>
+#### sprig build \<NAME> <path/to/main.rsmy> <path/to/manifest.json> \<path/to/passwd> DONE
 - builds package \<NAME> using provided rsmy and JSON files. Throws an error if <NAME> already exists.
 
 #### sprig cut \<NAME>
@@ -30,5 +30,5 @@
 #### sprig uproot 
 - Removes sprig from your system
 
-#### sprig push \<NAME> passwd <path/to/manifest.json> <path/to/main.rsmy>
+#### sprig grow \<NAME> passwd <path/to/manifest.json> <path/to/main.rsmy>
 - Pushes your code to existing package, with authentication required

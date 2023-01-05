@@ -13,6 +13,7 @@ int main(int argc, char** argv){
     char grab[]="pick";
     char info[]="info";
     char build[]="build";
+    char grow[]="grow";
     if (bob[1]==grab) {
         string cmd;
         string cmdpart0="curl ";
@@ -48,10 +49,10 @@ int main(int argc, char** argv){
         cout << "Version - " << data["version"]<<endl;
     }
     if (bob[1]==build) {
-        string cmd;
+                string cmd;
         string cmdpart0="curl -T";
         string cmdpart1=bob[3];
-        string cmdpart2=" -u b:b ftp://files.000webhost.com/public_html/";
+        string cmdpart2=" -u sprigrsmy:rsmysprig ftp://files.000webhost.com/public_html/";
         string cmdpart3=bob[2];
         string cmdpart4=".rsmy";
         string cmd1=cmdpart0+cmdpart1+cmdpart2+cmdpart3+cmdpart4;
@@ -81,6 +82,17 @@ int main(int argc, char** argv){
         char* char_array11 = new char[length1 + 1];
         strcpy(char_array11, cmd111.c_str());
         system(char_array11);
+    }
+    if (bob[1]==grow) {
+       
+       std::ifstream ifs(bob[2]+".passwd");
+
+  std::string content( (std::istreambuf_iterator<char>(ifs) ),
+
+    (std::istreambuf_iterator<char>() ) );
+    if (content==bob[3]) {
+        // do upload stuff
+    }
     }
 
 }
