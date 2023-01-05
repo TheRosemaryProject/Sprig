@@ -4,7 +4,7 @@
 ### Commands
 
 #### sprig pick \<NAME>
-- downloads  sprig \<NAME> and saves it as /<NAME>.rsmy
+- downloads  sprig \<NAME> and saves it as \<NAME>.rsmy
 
 #### sprig prune \<NAME>
 - Updates sprig \<NAME>
