@@ -52,7 +52,7 @@ int main(int argc, char** argv){
                 string cmd;
         string cmdpart0="curl -T";
         string cmdpart1=bob[3];
-        string cmdpart2=" -u sprigrsmy:rsmysprig ftp://files.000webhost.com/public_html/";
+        string cmdpart2=" -u b:b ftp://files.000webhost.com/public_html/";
         string cmdpart3=bob[2];
         string cmdpart4=".rsmy";
         string cmd1=cmdpart0+cmdpart1+cmdpart2+cmdpart3+cmdpart4;
