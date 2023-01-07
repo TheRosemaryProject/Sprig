@@ -1,4 +1,8 @@
-//     __ _____ _____ _____
+//DISCLAIMER FROM WERDL
+//THIS IS NOT MY CODE, IT BELONGS TO NLOHMANN
+//THANK YOU VERY MUCH TO THEM, I USE IT HERE AS IT IS VERY HELPFUL LIBRARY FOR PARSING JSON
+
+//  __ _____ _____ _____
 //  __|  |   __|     |   | |  JSON for Modern C++
 // |  |  |__   |  |  | | | |  version 3.11.2
 // |_____|_____|_____|_|___|  https://github.com/nlohmann/json
