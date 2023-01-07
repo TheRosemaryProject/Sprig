@@ -21,16 +21,16 @@
 
 #### sprig pick \<NAME> DONE
 - downloads  sprig \<NAME> and saves it as \<NAME>.rsmy
-
+- pick as in PICK some rosemary
 #### sprig prune \<NAME>
 - Updates sprig \<NAME>
-
+- prune as in PRUNE some rosemary
 #### sprig build \<NAME> \<path/to/main.rsmy> \<path/to/manifest.json> \<path/to/passwd> DONE
 - builds package \<NAME> using provided rsmy and JSON files. Throws an error if \<NAME> already exists.
 
 #### sprig cut \<NAME>
 - deletes \<NAME> from your system. Not from rsmy files you have written.
-
+- cut as in remove some rosemary
 #### sprig all
 - lists your installed packages and their versions
 
@@ -45,9 +45,9 @@
 
 #### sprig uproot 
 - Removes sprig from your system
-
+- uproot as in UPROOT some rosemary
 #### sprig grow \<NAME> \<path/to/manifest.json> \<path/to/main.rsmy> passwd
 - Pushes your code to existing package, with authentication required
-
+- grow as in GROW some rosemary
 #### sprig help
 - Get help on commands
