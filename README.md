@@ -1,6 +1,22 @@
 # Sprig
 ## Rosemary Package Manager
 ## Actual Sprigs found at [this website](https://sprigrsmy.000webhostapp.com/)
+### Creating a Package
+- You need a JSON mainfest file. Here is an example:
+```json
+{
+    "auths":[
+        {"name":"werdl","org":"gonerogue"},
+        {"name":"bot","org":null}
+    ],
+    "name":"example",
+    "desc":"sprig example package",
+    "version":"v0.0",
+    "dependancy":null
+}
+```
+- Ensure you put any dependancy you need in the right field.
+- Make sure you set a good password for your sprig, it is not easy to change down the line.
 ### Commands
 
 #### sprig pick \<NAME> DONE
@@ -9,8 +25,8 @@
 #### sprig prune \<NAME>
 - Updates sprig \<NAME>
 
-#### sprig build \<NAME> <path/to/main.rsmy> <path/to/manifest.json> \<path/to/passwd> DONE
-- builds package \<NAME> using provided rsmy and JSON files. Throws an error if <NAME> already exists.
+#### sprig build \<NAME> \<path/to/main.rsmy> \<path/to/manifest.json> \<path/to/passwd> DONE
+- builds package \<NAME> using provided rsmy and JSON files. Throws an error if \<NAME> already exists.
 
 #### sprig cut \<NAME>
 - deletes \<NAME> from your system. Not from rsmy files you have written.
@@ -30,5 +46,8 @@
 #### sprig uproot 
 - Removes sprig from your system
 
-#### sprig grow \<NAME> passwd <path/to/manifest.json> <path/to/main.rsmy>
+#### sprig grow \<NAME> \<path/to/manifest.json> \<path/to/main.rsmy> passwd
 - Pushes your code to existing package, with authentication required
+
+#### sprig help
+- Get help on commands

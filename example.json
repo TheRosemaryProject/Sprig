@@ -1,13 +1,10 @@
 {
     "auths":[
         {"name":"werdl","org":"gonerogue"},
-        {"name":"bot","org":"gonerogue"}
+        {"name":"bot","org":null}
     ],
     "name":"example",
     "desc":"sprig example package",
-    "src":"../main.rsmy",
     "version":"v0.0",
-    "depends":[
-        {"name":"lol"}
-    ]
+    "dependancy":null
 }
