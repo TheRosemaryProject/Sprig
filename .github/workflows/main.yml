@@ -11,6 +11,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ftp://files.000webhost.com/public_html/sprig
+        ftp-server: files.000webhost.com/public_html/sprig
         ftp-username: sprigrsmy
         ftp-password: ${{ secrets.FTP_PASSWORD }}
