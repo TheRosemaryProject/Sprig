@@ -18,7 +18,6 @@
 - Ensure you put any dependancy you need in the right field.
 - Make sure you set a good password for your sprig, it is not easy to change down the line.
 ### Commands
-
 #### sprig pick \<NAME> DONE
 - downloads  sprig \<NAME> and saves it as \<NAME>.rsmy
 - pick as in PICK some rosemary
